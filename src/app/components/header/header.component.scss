@@ -1,0 +1,28 @@
+:host {
+  padding: 8px;
+  display: block;
+}
+
+ul {
+  display: flex;
+  column-gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    &:not(:first-of-type) {
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: -7px;
+        top: 6px;
+        height: 14px;
+        width: 1px;
+        background-color: #3c82ff;
+      }
+    }
+  }
+}

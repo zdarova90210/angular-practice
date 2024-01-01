@@ -1,16 +1,21 @@
-import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from "@angular/router";
+import { Component, OnInit } from '@angular/core';
+import { Route, Router, RouterLink, RouterLinkActive, RouterModule } from "@angular/router";
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [
     RouterLink,
-    RouterLinkActive
+    RouterLinkActive,
+    RouterModule
   ],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
+  constructor() {
+  }
 
+  ngOnInit(): void {
+  }
 }
